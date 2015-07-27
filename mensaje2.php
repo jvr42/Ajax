@@ -1,3 +1,3 @@
 <?
-    echo date('s');
+    echo date('g:i:s');
 ?>
