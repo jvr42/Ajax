@@ -9,9 +9,14 @@
 
   </head>
   <body>
+<<<<<<< HEAD
   	<button onclick="doAjax('text')">Show Text</button>
     <button onclick="doAjax('jquery')">Go to JQuery</button>
     <h1 id="header"></h1>
+=======
+  	<button onclick="doAjax()">Click me to get message from server without refreshing....</button>
+    	<h1 id="header"></h1>
+>>>>>>> 34c876e553e318754bedc53cefa7f74a39862bf2
 
 	<script>
 	function doAjax(action)
