@@ -9,7 +9,6 @@
 
   </head>
   <body>
-<<<<<<< HEAD
   	<button onclick="doAjax('text')">Show Text</button>
     <button onclick="doAjax('jquery')">Go to JQuery</button>
     <h1 id="header"></h1>
