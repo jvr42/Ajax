@@ -9,18 +9,34 @@
 
   </head>
   <body>
-  	<button onclick="doAjax()">Click me to get message from server without refreshing....</button>
+  	<button onclick="doAjax('text')">Show Text</button>
+    <button onclick="doAjax('jquery')">Go to JQuery</button>
     <h1 id="header"></h1>
 
 	<script>
-	function doAjax()
+	function doAjax(action)
 	{
-		$.ajax('mensaje.php',{
-			success: function(data)
-			{
-				$('#header').html(data);
-			}
-		});
+        if (action == "text")
+        {
+    		$.ajax('mensaje.php',{
+    			success: function(data)
+    			{
+    				$('#header').html(data);
+    			}
+    		});
+        }
+        else
+        {
+            if (action == "jquery")
+            {
+                $.ajax('mensaje2.php',{
+        			success: function(data)
+        			{
+        				$('#header').html(data);
+        			}
+        		});
+            }
+        }
 	}
 	</script>
 
